@@ -69,10 +69,9 @@ $array_dischi = [
     "author"=> "Michael Jacjson",
     "genre"=> "Pop",
     "year"=> "1987"
-    ]
-    ]
+    ],
+];
 ?>
-
 
 
 <!DOCTYPE html>
@@ -81,16 +80,15 @@ $array_dischi = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>prima versione</title>
 </head>
 <body>
     <?php
-	foreach ($array_dischi as $disco) {
-		echo ($disco['poster']);
-		echo ($disco['title']);
-		echo ($disco['author']);
-		echo ($disco['genre']);
-		echo ($disco['year']);
-	};?>
+    foreach ($array_dischi as $value) { ?>
+        <div>
+            <img src="<?php $value['poster'] ?>">
+            <h2><?php $value['title']?></h2>
+        </div><?
+    } ?>
 </body>
 </html>

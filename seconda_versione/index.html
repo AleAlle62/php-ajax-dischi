@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titolo -->
+    <title>seconda versione</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <!-- vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js" defer></script>
+    <!-- js -->
+	<script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/991px-Spotify_icon.svg.png" class="logo">
+    </header>
+    <!-- vue -->
+    <main id="app">
+        <div class="cards">
+            <!-- ciclo -->
+            <div v-for="card in dischi" :key="card.id">
+                <!-- foto -->
+                <img class="disco-img" :src="card.poster">
+                <!-- titolo -->
+                <h2 class="titolo">{{ card.title }}</h2>
+                <!-- autore -->
+                <p class="sub_tit">{{ card.author }}</p>
+                <!-- anno -->
+                <p class="sub_tit">{{ card.year }}</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

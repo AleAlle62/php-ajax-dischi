@@ -8,7 +8,6 @@
 
 
 main {
-    height: 90vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -28,7 +27,6 @@ h1 {
 }
 
 header {
-    height: 10vh;
     background-color: rgba(45,58,70,255);
     display: flex;
     align-items: center;
